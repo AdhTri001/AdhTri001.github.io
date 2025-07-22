@@ -4,7 +4,9 @@ name: Deploy static content to Github Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['portfolio']
+    branches:
+      - 'portfolio'
+      - 'main'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
@@ -34,6 +36,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Checkout the branch specified in the workflow_dispatch input or default to 'portfolio'
+          ref: ${{ github.event.inputs.branch || 'portfolio' }}
       - name: Set up Node
         uses: actions/setup-node@v4
         with:

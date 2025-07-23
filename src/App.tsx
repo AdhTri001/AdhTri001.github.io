@@ -7,9 +7,9 @@ import Hobbies from "./pages/Hobbies";
 
 import { Route, Routes } from "react-router-dom";
 
+
 const title = "Adheesh Trivedi";
 const pages = ["Projects", "Content", "Hobbies"];
-
 
 /**
  * A NavBar component at the top of the page

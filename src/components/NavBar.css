@@ -5,57 +5,55 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: fit-content;
-  padding-top: 10px;
   background: var(--bg-light);
-  box-shadow: 0 40px 100px var(--bg-light);
+  box-shadow: 0 4rem 10rem var(--bg-light);
 }
 
 nav div.title-container {
-  padding: 0 20px;
+  padding-left: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 nav div.title-container * {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 nav div .theme-toggle {
-  font-size: 25px;
+  font-size: 2.5rem;
   cursor: pointer;
   background: var(--bg);
-  border: var(--border-muted) 2px solid;
-  width: 45px;
-  height: 45px;
+  border: var(--border) 2px solid;
+  width: 4.5rem;
+  height: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30%;
   user-select: none;
-  transform: translateY(-7px);
 }
 
 nav div .navbar-title {
-  font-size: 40px;
+  font-size: 4rem;
   flex-grow: 1;
   text-decoration: none;
   /* Text border */
   text-shadow: 1px 1px 0 var(--bg-dark), -1px -1px 0 var(--bg-dark);
   font-weight: 500;
   color: var(--primary);
+  translate: 0 .5rem;
 }
 
 nav div .menu-icon {
   display: none;
-  font-size: 30px;
+  font-size: 3rem;
   cursor: pointer;
   color: var(--primary);
   background: var(--bg);
   border: var(--border) 2px solid;
   border-radius: 20%;
   user-select: none;
+  width: 4.5rem;
 }
 
 nav ul {
@@ -65,9 +63,9 @@ nav ul {
 }
 
 nav ul li .navbar-links {
-  font-size: 30px;
+  font-size: 3rem;
   text-decoration: none;
-  padding: 10px;
+  padding: 1rem;
   color: var(--secondary);
   border-color: var(--border);
   border-radius: 10%;
@@ -88,20 +86,21 @@ nav ul li .navbar-links:hover:not(.active) {
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
-    padding: 10px;
-    padding-top: 15px;
+    padding: 1rem;
+    padding-top: 1.5rem;
   }
 
   nav div .menu-icon {
     display: flex;
+    justify-content: center;
   }
 
   nav ul {
     display: none;
     padding: 0;
     margin: 0;
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 1rem;
+    padding-top: 1rem;
     flex-direction: column;
     align-items: center;
     background: var(--bg);
@@ -111,7 +110,7 @@ nav ul li .navbar-links:hover:not(.active) {
   nav ul li {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   nav ul.open {

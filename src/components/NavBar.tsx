@@ -83,7 +83,10 @@ function NavBar({ title, pages }: NavBarProps) {
       {/* Navigation Links */}
       <ul className={`${isMenuOpen ? 'open' : ''}`}>
         {pages.map((page, index) => (<li key={index}>
-          <NavLink to={`${page.toLowerCase()}`} className='navbar-links' onClick={() => setIsOpen(false)}>
+          <NavLink to={`${page.toLowerCase()}`} className='navbar-links' onClick={() => {
+            setIsOpen(false)
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+          }}>
             {page}
           </NavLink>
         </li>))}

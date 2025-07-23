@@ -1,0 +1,22 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px var(--bg);
+  border: 3px solid var(--primary);
+}
+
+.profile-desc {
+  color: var(--text);
+  text-align: center;
+  max-width: 400px;
+}

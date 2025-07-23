@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+/* If mobile, scale down */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+    /* 1rem = 8px */
+  }
+}
+
+/* Check for is motion enabled */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    transition: background-color 0.2s ease-in-out,
+      color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
+  }
+}

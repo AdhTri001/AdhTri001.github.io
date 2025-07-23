@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Interests",
+    "items": [
+      "Web Development",
+      "AI & Machine Learning",
+      "Photography",
+      "Traveling"
+    ]
+  },
+  {
+    "category": "Skill Sets",
+    "items": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML/CSS",
+      "Node.js",
+      "Python"
+    ]
+  }
+]

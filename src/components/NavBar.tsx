@@ -66,7 +66,7 @@ function NavBar({ title, pages }: NavBarProps) {
 
         {/* Theme Toggle Button */}
         <button className='theme-toggle' onClick={handleThemeToggle}>
-          {isDarkMode ? '🔦' : '🌑'}
+          {isDarkMode ? '😎' : '😌'}
         </button>
 
         <Link to='/' className='navbar-title' onClick={() => setIsOpen(false)}>

@@ -22,14 +22,14 @@ nav div.title-container * {
 nav div .theme-toggle {
   font-size: 2.5rem;
   cursor: pointer;
-  background: var(--bg);
+  background: var(--text);
   border: var(--border) 2px solid;
   width: 4.5rem;
   height: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30%;
+  border-radius: 2rem;
   user-select: none;
 }
 
@@ -51,7 +51,7 @@ nav div .menu-icon {
   color: var(--primary);
   background: var(--bg);
   border: var(--border) 2px solid;
-  border-radius: 20%;
+  border-radius: 1rem;
   user-select: none;
   width: 4.5rem;
 }
@@ -68,7 +68,7 @@ nav ul li .navbar-links {
   padding: 1rem;
   color: var(--secondary);
   border-color: var(--border);
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
 nav ul li .navbar-links.active {
@@ -80,7 +80,7 @@ nav ul li .navbar-links.active {
 
 nav ul li .navbar-links:hover:not(.active) {
   border-width: 1px;
-  background: var(--grad-hover);
+  background: var(--gradient-highlight);
 }
 
 @media (max-width: 900px) {

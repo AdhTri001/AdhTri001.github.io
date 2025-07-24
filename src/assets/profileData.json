@@ -2,21 +2,26 @@
   {
     "category": "Interests",
     "items": [
-      "Web Development",
-      "AI & Machine Learning",
-      "Photography",
-      "Traveling"
+      "Model Checking",
+      "Algorithms",
+      "Graph Coloring",
+      "Parsers"
     ]
   },
   {
-    "category": "Skill Sets",
+    "category": "Languages",
     "items": [
-      "React",
-      "TypeScript",
-      "JavaScript",
-      "HTML/CSS",
+      "Python",
+      "C++",
+      "TypeScript"
+    ]
+  },
+  {
+    "category": "Frameworks and Libraries",
+    "items": [
+      "React + React Router",
       "Node.js",
-      "Python"
+      "NumPy"
     ]
   }
 ]

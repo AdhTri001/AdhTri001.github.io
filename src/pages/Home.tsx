@@ -6,7 +6,7 @@ import Profile from "../components/Profile";
 import CategoryList from "../components/CategoryList";
 
 import profileData from "../assets/profileData.json";
-import profileImg from "../assets/Bday21.jpg";
+import profileImg from "../assets/me.jpg";
 
 function Home() {
   const [categories, setCategories] = useState<any[]>([]);

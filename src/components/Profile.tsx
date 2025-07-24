@@ -1,9 +1,9 @@
+import "./Profile.css";
+
 import githubIcon from "../assets/icons/github.svg?react";
 import linkedinIcon from "../assets/icons/linkedin.svg?react";
 import mailIcon from "../assets/icons/mail.svg?react";
 import xIcon from "../assets/icons/x.svg?react";
-
-import "./Profile.css";
 
 
 interface ProfileProps {
@@ -38,12 +38,15 @@ function Profile({ image }: ProfileProps) {
     <div className="profile">
       <img src={image} alt="Profile" className="profile-img" />
       <p className="profile-desc">
-        I'm a Computer Science student at Indian Institute of Science Education and Research, Bhopal.
+        I’m Adheesh Trivedi, a third‑year Computer Science & Engineering student at IISER Bhopal, driven by a deep love of theoretical computer science. I thrive on puzzles at the intersection of math, code, and impact.
+      </p>
+      <p className="profile-desc">
+        Beyond Code, I like to do music and practice typing.
       </p>
       <div className="profile-socials">
         {SOCIALS.map((s, idx) => (
-          <a key={idx} href={s.url} target="_blank" rel="noopener noreferrer">
-            <s.icon className="profile-social-icon" />
+          <a key={idx} href={s.url} target="_blank" rel="noopener noreferrer" >
+            <s.icon className="profile-social-icon" title={s.alt} />
           </a>
         ))}
       </div>

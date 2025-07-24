@@ -1,7 +1,11 @@
 import './NavBar.css';
 
+import SunIcon from "../assets/icons/sun.svg?react";
+import MoonIcon from "../assets/icons/moon.svg?react";
+
 import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
+// import moonIcon from '../assets/icons/moon.svg?react';
 
 
 interface NavBarProps {
@@ -66,7 +70,7 @@ function NavBar({ title, pages }: NavBarProps) {
 
         {/* Theme Toggle Button */}
         <button className='theme-toggle' onClick={handleThemeToggle}>
-          {isDarkMode ? '😎' : '😌'}
+          {isDarkMode ? <SunIcon className="theme-icon" title="Switch to light mode" /> : <MoonIcon className="theme-icon" title="Switch to dark mode" />}
         </button>
 
         <Link to='/' className='navbar-title' onClick={() => setIsOpen(false)}>

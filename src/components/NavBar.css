@@ -20,17 +20,31 @@ nav div.title-container * {
 }
 
 nav div .theme-toggle {
-  font-size: 2.5rem;
   cursor: pointer;
   background: var(--text);
   border: var(--border) 2px solid;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
   user-select: none;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+nav div .theme-icon {
+  margin: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  filter: drop-shadow(0 1px 2px var(--bg-dark));
+  fill: var(--bg);
+  transition: transform 0.2s;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: scale(1.15) rotate(-10deg);
 }
 
 nav div .navbar-title {

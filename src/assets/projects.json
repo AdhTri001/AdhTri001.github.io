@@ -1,0 +1,127 @@
+[
+  {
+    "title": "Optimization and RL for Adaptive Traffic Signal Control",
+    "start": {
+      "month": "Feb",
+      "year": 2025
+    },
+    "end": {
+      "month": "Apr",
+      "year": 2025
+    },
+    "description": "Led the development of optimization-based strategy to minimize vehicle waiting times at traffic signals using Self-Organizing Traffic Lights (SOTL) by formulating it as an ILP problem. Implemented Q-Learning and Deep Q-Learning (DQL) approaches for adaptive traffic control, and compared them with fixed timing approach. Conducted simulations using SUMO (Simulation of Urban MObility) to validate results on a 4-lane intersection under varying traffic conditions.",
+    "skills": [
+      "SUMO",
+      "Optimization",
+      "Reinforcement Learning (Q-learning, DQN)",
+      "Traffic modeling"
+    ],
+    "source": "https://github.com/AdhTri001/traffic-light-optimization"
+  },
+  {
+    "title": "Texture classification and face clustering for image search",
+    "start": {
+      "month": "Sept",
+      "year": 2024
+    },
+    "end": {
+      "month": "Nov",
+      "year": 2024
+    },
+    "description": "The project aims to address the common challenge of navigating through directories containing a large collection of images, enabling users to efficiently filter and search for their own or others' images. Face clustering: MTCNN was used for face bounding box searching. Then these face images were then passed to InceptionResNetV1 trained on VGGFACE2, thus giving a face-to-vector embedding. The two faces were matched by cosin similarity of embeddings. Batching was implementating to prevent from running out of memory. Texture classification: Implemented by Aditya Sinha, measured different texture classification methods and search images based on the textual information.",
+    "skills": [
+      "PyTorch with CUDA"
+    ],
+    "source": "https://github.com/AdhTri001/nomadium"
+  },
+  {
+    "title": "A chatbot based on the BoW technique | Intermediate/+2 final project",
+    "start": {
+      "month": "Oct",
+      "year": 2021
+    },
+    "description": "A bag of words based chatbot that can perform tasks like to do list, define words, note taking, fetching time in particular city, country or timezones, etc. The bot was able to maintain context of previous messages. The sequential neural network model was trained using tensorflow, and the dataset for the bot was made from scratch, listing out all the requirements that I had, from the bot.",
+    "skills": [
+      "Tensorflow",
+      "PyQT5"
+    ],
+    "source": "https://github.com/AdhTri001/tensorBot"
+  },
+  {
+    "title": "Tool for Model and Logical embeddings Model checking",
+    "start": {
+      "month": "Dec",
+      "year": 2024
+    },
+    "description": "Followed lecture series from NPTEL to learn about the field, following the book Principles of Model checking. Working on developing very efficient programming to convert action labeled model generated from tools such as CADP and mcrl2, to state labelled models compatible with Prism and Storm model checkers and vice versa. As easy it is to write a model in CADP or mcrl2, they don't have robust support for model checking yet. This projects tries to remove this gap, by bridging the two communities.",
+    "skills": [
+      "Model checking",
+      "NuSMV"
+    ]
+  },
+  {
+    "title": "Scheduling exams using Graph coloring",
+    "start": {
+      "month": "Oct",
+      "year": 2024
+    },
+    "end": {
+      "month": "Jan",
+      "year": 2025
+    },
+    "description": "We realised that our college has been making exam schedules with ~14,000 students and course registration entries. This required large amount of manual work. We developed a solution for generating exam schedules in universities automatically, through graph coloring. It can generate a close to best schedule in 15 seconds, for our institute. It can assign multiple lecture halls for certain course, if one lecture hall can't fulfill the strength of the course. It also tries to minimize the number of cases where students have to give more than one exam in 24 hours.",
+    "skills": [
+      "Python",
+      "NetworkX",
+      "PyInstaller"
+    ]
+  },
+  {
+    "title": "Reading project on Graph theory",
+    "start": {
+      "month": "Jan",
+      "year": 2024
+    },
+    "end": {
+      "month": "Apr",
+      "year": 2024
+    },
+    "description": "Read the book A First look at Graph Theory by Clark and Halton. Solved exercises in the book and test the learned concepts of Graph Theory."
+  },
+  {
+    "title": "Litesoph",
+    "start": {
+      "month": "Feb",
+      "year": 2024
+    },
+    "end": {
+      "month": "Aug",
+      "year": 2024
+    },
+    "description": "Utilizing engines like Octopus, GPAW, NWChem and launching a job in clusters like param-ganga and param-kamrupa, some of the most powerful HPC in India. Layer Integrated Toolkit and Engine for Simulations of Photo-induced Phenomena, written entirely in Python. It integrates such engines, utilizing their ground state and DFT computation capabilities. Worked on Litesoph as a lead developer intern.",
+    "skills": [
+      "Tkinter",
+      "Using HPC (High Performance Computing)",
+      "SLURM"
+    ],
+    "source": "https://github.com/aitgcodes/litesoph"
+  },
+  {
+    "title": "A general purpose discord bot",
+    "start": {
+      "month": "Apr",
+      "year": 2021
+    },
+    "end": {
+      "month": "Jun",
+      "year": 2021
+    },
+    "description": "The bot had features that included server moderation, games, music playback, jokes, and meme creations. It was designed using discord.py and was written in python. The project was written in Python and utilized PostgreSQL database to store every configuration for the bot, which was server and user specific. The bot was designed to be scalable.",
+    "skills": [
+      "Python",
+      "PostgreSQL",
+      "discord.py"
+    ],
+    "source": "https://github.com/AdhTri001/UFO-BOT"
+  }
+]

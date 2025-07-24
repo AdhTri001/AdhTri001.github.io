@@ -1,15 +1,14 @@
 import NavBar from "./components/NavBar"
 
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Works from "./pages/Works";
 import Content from "./pages/Content";
 import Hobbies from "./pages/Hobbies";
 
 import { Route, Routes } from "react-router-dom";
 
 
-const title = "Adheesh Trivedi";
-const pages = ["Projects", "Content", "Hobbies"];
+const pages = ["Works", "Content", "Hobbies"];
 
 /**
  * A NavBar component at the top of the page
@@ -20,10 +19,10 @@ function App() {
 
   return (
     <>
-      <NavBar title={title} pages={pages} />
+      <NavBar pages={pages} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/works" element={<Works />} />
         <Route path="/content" element={<Content />} />
         <Route path="/hobbies" element={<Hobbies />} />
       </Routes>

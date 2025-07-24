@@ -38,7 +38,7 @@ function Profile({ image }: ProfileProps) {
     <div className="profile">
       <img src={image} alt="Profile" className="profile-img" />
       <p className="profile-desc">
-        I’m Adheesh Trivedi, a third‑year Computer Science & Engineering student at IISER Bhopal, driven by a deep love of theoretical computer science. I thrive on puzzles at the intersection of math, code, and impact.
+        I’m a third‑year Computer Science & Engineering student at IISER Bhopal, driven by a deep love of theoretical computer science. I thrive on puzzles at the intersection of math, code, and impact.
       </p>
       <p className="profile-desc">
         Beyond Code, I like to do music and practice typing.

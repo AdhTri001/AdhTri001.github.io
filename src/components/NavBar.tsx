@@ -3,13 +3,12 @@ import './NavBar.css';
 import SunIcon from "../assets/icons/sun.svg?react";
 import MoonIcon from "../assets/icons/moon.svg?react";
 
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 // import moonIcon from '../assets/icons/moon.svg?react';
 
 
 interface NavBarProps {
-  title: string;
   pages: string[];
 }
 
@@ -20,7 +19,7 @@ interface NavBarProps {
  *
  * @returns JSX Element representing the NavBar
  */
-function NavBar({ title, pages }: NavBarProps) {
+function NavBar({ pages }: NavBarProps) {
 
   // MENU HANDLER //
 
@@ -64,39 +63,40 @@ function NavBar({ title, pages }: NavBarProps) {
 
   return (
     <nav className={`navbar`}>
-
-      {/* Navbar Title */}
       <div className='title-container'>
-
         {/* Theme Toggle Button */}
         <button className='theme-toggle' onClick={handleThemeToggle}>
           {isDarkMode ? <SunIcon className="theme-icon" title="Switch to light mode" /> : <MoonIcon className="theme-icon" title="Switch to dark mode" />}
         </button>
 
-        <Link to='/' className='navbar-title' onClick={() => setIsOpen(false)}>
-          {title}
-        </Link>
-
-        {/* Menu Icon for Mobile View */}
+        {/* No navbar-title, Home is now a navbar-link below */}
         <button className='menu-icon' onClick={() => setIsOpen(!isMenuOpen)}>
           {isMenuOpen ? '✖' : '☰'}
         </button>
-
       </div>
 
       {/* Navigation Links */}
       <ul className={`${isMenuOpen ? 'open' : ''}`}>
-        {pages.map((page, index) => (<li key={index}>
-          <NavLink to={`${page.toLowerCase()}`} className='navbar-links' onClick={() => {
+        <li key="home">
+          <NavLink to="/" className='navbar-links' onClick={() => {
             setIsOpen(false)
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
           }}>
-            {page}
+            Home
           </NavLink>
-        </li>))}
+        </li>
+        {pages.map((page) => (
+          <li key={page}>
+            <NavLink to={`/${page.toLowerCase()}`} className='navbar-links' onClick={() => {
+              setIsOpen(false)
+              window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+            }}>
+              {page}
+            </NavLink>
+          </li>
+        ))}
       </ul>
-
-    </nav >
+    </nav>
   )
 }
 

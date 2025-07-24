@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Adheesh Trivedi – Creative Portfolio
 
-Currently, two official plugins are available:
+This is a modern, creative portfolio built with **React**, **TypeScript**, and **Vite**. It features a beautiful, unified design and showcases my interests, projects, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Modern UI**: Consistent, elegant layout with a custom `PageLayout` component.
+- **Dark/Light Theme**: Toggle between dark and light modes.
+- **Responsive Design**: Looks great on all devices.
+- **Profile & Socials**: See my profile, interests, and connect via social links.
+- **Projects**: Explore my technical and creative projects.
+- **Content**: Read about my thoughts, essays, and learning journeys.
+- **Hobbies**: Discover what I do for fun beyond code.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Quick Start
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Run the app locally:**
+   ```sh
+   npm run dev
+   ```
+3. **Build for production:**
+   ```sh
+   npm run build
+   # Preview the build
+   npm run preview
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🗂️ Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `src/components/` – Reusable UI components (NavBar, Profile, CategoryList, PageLayout, etc.)
+- `src/pages/` – Main pages (Home, Projects, Content, Hobbies)
+- `src/assets/` – Images, icons, and data
+- `src/index.css` – Global and creative page styles
+- `src/themes.css` – Theme variables (light/dark)
+- `src/preamble.css` – CSS resets and base styles
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🖌️ Customization
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Add your own projects in `src/pages/Projects.tsx`.
+- Update your profile and interests in `src/assets/profileData.json` and `src/components/Profile.tsx`.
+- Tweak styles in `src/index.css` and `src/themes.css` for a unique look.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Built With
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router](https://reactrouter.com/)
+
+---
+
+Made with ❤️ by Adheesh Trivedi

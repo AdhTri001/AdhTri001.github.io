@@ -1,0 +1,34 @@
+{
+  "name": "Adheesh Trivedi",
+  "about": [
+    "I’m a third‑year Computer Science & Engineering student at IISER Bhopal, driven by a deep love of theoretical computer science. I thrive on puzzles at the intersection of math, code, and impact.",
+    "Beyond Code, I like to do music and practice typing."
+  ],
+  "socials": {
+    "github": "https://github.com/AdhTri001",
+    "linkedin": "https://linkedin.com/in/AdhTri001",
+    "mail": "mailto:adheesh22@iiserb.ac.in",
+    "x": "https://x.com/AdhTri001"
+  },
+  "categories": [
+    {
+      "category": "Interests",
+      "items": [
+        "Model Checking",
+        "Algorithms",
+        "Graph Theory",
+        "DSL & Parsers",
+        "ML Algorithms"
+      ]
+    },
+    {
+      "category": "Languages",
+      "items": [
+        "Python",
+        "C++",
+        "TypeScript+HTML+CSS",
+        "Bash"
+      ]
+    }
+  ]
+}

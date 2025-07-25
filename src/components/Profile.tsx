@@ -8,47 +8,53 @@ import xIcon from "../assets/icons/x.svg?react";
 
 interface ProfileProps {
   image: string;
+  about: string[];
+  socials?: {
+    github?: string;
+    linkedin?: string;
+    mail?: string;
+    x?: string;
+  };
 }
 
-const SOCIALS = [
-  {
-    url: "https://github.com/AdhTri001",
-    icon: githubIcon,
-    alt: "GitHub"
-  },
-  {
-    url: "https://linkedin.com/in/AdhTri001",
-    icon: linkedinIcon,
-    alt: "LinkedIn"
-  },
-  {
-    url: "mailto:adheesh22@iiserb.ac.in",
-    icon: mailIcon,
-    alt: "Mail"
-  },
-  {
-    url: "https://x.com/AdhTri001",
-    icon: xIcon,
-    alt: "X"
-  }
-];
+const SOCIALS_ICONS = {
+  github: githubIcon,
+  linkedin: linkedinIcon,
+  mail: mailIcon,
+  x: xIcon,
+};
 
-function Profile({ image }: ProfileProps) {
+function Profile({ image, about, socials }: ProfileProps) {
   return (
     <div className="profile">
+      {/* Profile image */}
       <img src={image} alt="Profile" className="profile-img" />
-      <p className="profile-desc">
-        I’m a third‑year Computer Science & Engineering student at IISER Bhopal, driven by a deep love of theoretical computer science. I thrive on puzzles at the intersection of math, code, and impact.
-      </p>
-      <p className="profile-desc">
-        Beyond Code, I like to do music and practice typing.
-      </p>
+
+      {/* Profile description */}
+      {about.map((line, idx) => (
+        <p key={idx} className="profile-desc">
+          {line}
+        </p>
+      ))}
+
+      {/* Profile socials */}
       <div className="profile-socials">
-        {SOCIALS.map((s, idx) => (
-          <a key={idx} href={s.url} target="_blank" rel="noopener noreferrer" >
-            <s.icon className="profile-social-icon" title={s.alt} />
-          </a>
-        ))}
+        {socials &&
+          Object.entries(socials).map(([key, value]) => {
+            const Icon = SOCIALS_ICONS[key as keyof typeof SOCIALS_ICONS];
+            return (
+              value && (
+                <a
+                  key={key}
+                  href={value}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon className="profile-social-icon" title={key} />
+                </a>
+              )
+            );
+          })}
       </div>
     </div>
   );

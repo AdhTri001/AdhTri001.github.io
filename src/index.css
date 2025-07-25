@@ -1,27 +1,33 @@
-/* Newsreader font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+/* Playfair Display SC for headings */
+/* Lato font for body text */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
 
 body {
   margin: 0;
-  margin-top: 13rem;
-  font-family: 'Newsreader', 'Times New Roman', Times, serif;
+  margin-top: 12rem;
+  font-family: 'Lato', sans-serif;
   font-size: 2rem;
   background-color: var(--bg-dark);
   color: var(--text);
+  line-height: 1.4;
 }
 
 h1 {
+  font-family: 'Playfair Display SC', serif;
   font-size: 5rem;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 4rem;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 3rem;
   font-weight: 500;
 }
 
 h3 {
   margin: 0;
-  font-size: 3rem;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2.5rem;
   font-weight: 500;
 }

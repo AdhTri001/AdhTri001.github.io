@@ -14,11 +14,11 @@
     {
       "category": "Interests",
       "items": [
+        "Low Level Programming",
         "Model Checking",
         "Algorithms",
         "Graph Theory",
-        "DSL & Parsers",
-        "ML Algorithms"
+        "DSL & Parsers"
       ]
     },
     {
@@ -26,8 +26,7 @@
       "items": [
         "Python",
         "C++",
-        "TypeScript+HTML+CSS",
-        "Bash"
+        "TypeScript"
       ]
     }
   ]

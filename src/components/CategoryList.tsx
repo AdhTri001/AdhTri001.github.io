@@ -11,7 +11,7 @@ const CategoryList: React.FC<CategoryListProps> = ({ category, items }) => (
     <h2>{category}</h2>
     <ul>
       {items.map((item, idx) => (
-        <li key={idx}>{item}</li>
+        <li key={idx} className="bubble">{item}</li>
       ))}
     </ul>
   </div>

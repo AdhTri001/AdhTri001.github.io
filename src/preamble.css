@@ -3,8 +3,9 @@
 }
 
 html {
-  font-size: 62.5%;
   /* 1rem = 10px */
+  font-size: 62.5%;
+  min-width: 300px;
 }
 
 /* If mobile, scale down */
@@ -15,12 +16,16 @@ html {
   }
 }
 
+* {
+  transition: background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
 /* Check for is motion enabled */
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: reduce) {
   * {
-    transition: background-color 0.2s ease-in-out,
-      color 0.2s ease-in-out,
-      border-color 0.2s ease-in-out,
-      box-shadow 0.2s ease-in-out;
+    transition: none;
   }
 }

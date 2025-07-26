@@ -1,0 +1,36 @@
+/* BUBBLE for list items */
+.bubble {
+  margin: 0.5rem 0.5rem;
+  background: var(--bg);
+  border: var(--border) 1px solid;
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.bubble:hover {
+  background: var(--gradient-highlight);
+  border-bottom-color: var(--highlight);
+  color: var(--text);
+}
+
+
+/* HIDDEN ELEMENTS ANIMATION */
+/* NOTE: max-height should be set in component CSS itself */
+.expandable {
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out, margin 0.2s ease-in-out;
+}
+
+.expandable.open {
+  opacity: 1;
+  overflow: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expandable {
+    transition: none;
+  }
+}

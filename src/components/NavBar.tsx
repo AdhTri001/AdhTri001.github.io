@@ -76,7 +76,7 @@ function NavBar({ pages }: NavBarProps) {
       </div>
 
       {/* Navigation Links */}
-      <ul className={`${isMenuOpen ? 'open' : ''}`}>
+      <ul className={`${isMenuOpen ? 'open' : ''} ${window.innerWidth < 700 ? 'expandable' : ''}`}>
         <li key="home">
           <NavLink to="/" className='navbar-links' onClick={() => {
             setIsOpen(false)

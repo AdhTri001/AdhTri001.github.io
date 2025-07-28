@@ -1,12 +1,13 @@
 import NavBar from "./components/NavBar"
 
 import Home from "./Home/Home";
+import Projects from "./Projects/Projects";
 import Experience from "./Experience/Experience";
 
 import { Route, Routes } from "react-router-dom";
 
 
-const pages = ["Experience"];
+const pages = ["Projects", "Experience"];
 
 /**
  * A NavBar component at the top of the page
@@ -20,6 +21,7 @@ function App() {
       <NavBar pages={pages} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
       </Routes>
     </>

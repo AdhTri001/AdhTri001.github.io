@@ -26,7 +26,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
   description,
   skills,
   links,
-  isExpandable = true,
+  isExpandable = false,
 }) => {
   const [expanded, setExpanded] = useState(false);
   const handleToggle = () => {
@@ -37,7 +37,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
 
   return (
     <div
-      className={`activity-card${isExpandable ? " expandable" : ""}`}
+      className={`activity-card`}
       onClick={handleToggle}
       style={!isExpandable ? { cursor: "default" } : {}}
     >
@@ -48,7 +48,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
           <span className="activity-card-affiliation">@ {affiliation}</span>
         )}
       </div>
-      <div className={`activity-card-description ${isExpandable ? "expandable" : "open"}${expanded ? " open" : ""}`}>
+      <div className={`activity-card-description ${isExpandable ? "expandable" : "open"}${isExpandable && expanded ? " open" : ""}`}>
         {links && links.length > 0 && (
           <div className="activity-card-links">
             {links.map((link, idx) => (

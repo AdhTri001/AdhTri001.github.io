@@ -1,0 +1,91 @@
+[
+  {
+    "heading": "Position of Responsibilities",
+    "experiences": [
+      {
+        "title": "Coordinator",
+        "affiliation": "Coding Club, IISER Bhopal",
+        "start": {
+          "month": "May",
+          "year": 2024
+        },
+        "end": {
+          "month": "May",
+          "year": 2025
+        },
+        "description": [
+          "Organized several offline CP contests.",
+          "Conducted programming tutorials and open-hour discussions for sharing of ideas."
+        ],
+        "skills": [
+          "Leadership"
+        ]
+      },
+      {
+        "title": "Hackathon Organizer",
+        "affiliation": "Armacode 0, IISER Bhopal x IIIT Bhopal",
+        "start": {
+          "month": "Jan",
+          "year": 2024
+        },
+        "end": {
+          "month": "Apr",
+          "year": 2024
+        },
+        "description": [
+          "Organized a 35-hour National hackathon.",
+          "Collaborated with several industry experts and professors of IISERB and IIIT Bhopal to create problem statements and judge the solutions on final rounds."
+        ],
+        "skills": [
+          "Event Management",
+          "Collaboration"
+        ]
+      }
+    ]
+  },
+  {
+    "heading": "Dev Internships",
+    "experiences": [
+      {
+        "title": "Scientific Tool Developer Intern",
+        "affiliation": "Arpit Sharma",
+        "start": {
+          "month": "Dec",
+          "year": 2024
+        },
+        "description": [
+          "Working on developing very efficient programming to convert action labeled model generated from tools such as <i>CADP</i> and <i>mcrl2</i>, to state labelled models compatible with <i>Prism</i> and <i>Storm</i> model checkers and vice versa.",
+          "As easy it is to write a model in <i>CADP</i> or <i>mcrl2</i>, they don’t have robust support for model checking yet. This projects tries to remove this gap, by bridging the two communities."
+        ],
+        "skills": [
+          "C++ / CMake",
+          "Model Checking",
+          "Parsers",
+          "Performance Optimization"
+        ]
+      },
+      {
+        "title": "GUI Developer Intern",
+        "affiliation": "Litesoph, AITG",
+        "start": {
+          "month": "Feb",
+          "year": 2024
+        },
+        "end": {
+          "month": "Aug",
+          "year": 2024
+        },
+        "description": [
+          "Worked as a lead developer intern",
+          "Utilizing engines like <i>Octopus</i>, <i>GPAW</i>, <i>NWChem</i> and launching a job in clusters like <i>param-ganga</i> and <i>param-kamrupa</i>, some of the most powerful HPC in India.",
+          "Layer Integrated Toolkit and Engine for Simulations of Photo-induced Phenomena, written entirely in Python. It integrates such engines, utilizing their ground state and DFT computation capabilities."
+        ],
+        "skills": [
+          "Python",
+          "Tkinter",
+          "High Performance Computing"
+        ]
+      }
+    ]
+  }
+]

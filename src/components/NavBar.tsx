@@ -24,6 +24,7 @@ function NavBar({ pages }: NavBarProps) {
   // MENU HANDLER //
 
   let [isMenuOpen, setIsOpen] = useState(false);
+
   /// Implementation for MENU here ///
 
   // END MENU HANDLER //
@@ -69,14 +70,13 @@ function NavBar({ pages }: NavBarProps) {
           {isDarkMode ? <SunIcon className="theme-icon" title="Switch to light mode" /> : <MoonIcon className="theme-icon" title="Switch to dark mode" />}
         </button>
 
-        {/* No navbar-title, Home is now a navbar-link below */}
         <button className='menu-icon' onClick={() => setIsOpen(!isMenuOpen)}>
           {isMenuOpen ? '✖' : '☰'}
         </button>
       </div>
 
       {/* Navigation Links */}
-      <ul className={`${isMenuOpen ? 'open' : ''} ${window.innerWidth < 700 ? 'expandable' : ''}`}>
+      <ul className={`${isMenuOpen ? 'open' : ''} expandable`}>
         <li key="home">
           <NavLink to="/" className='navbar-links' onClick={() => {
             setIsOpen(false)

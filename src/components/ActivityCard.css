@@ -1,0 +1,79 @@
+/* Card container */
+.activity-card {
+  background: var(--bg-light);
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  margin: 1.5rem 0;
+  cursor: pointer;
+  border: 1px solid var(--border-muted);
+}
+
+.activity-card:hover {
+  box-shadow: 0 0 8px var(--border-muted);
+  border-color: var(--border);
+}
+
+.activity-card-date {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  word-spacing: 0.15rem;
+  color: var(--text-muted);
+}
+
+.activity-card-header {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.activity-card-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.activity-card-affiliation {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 1.5rem;
+  text-wrap: nowrap;
+  color: var(--text-muted);
+}
+
+.activity-card-links {
+  margin-bottom: 0.5em;
+  font-size: 0.98em;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.7em;
+}
+
+.activity-card-link {
+  color: var(--text-muted);
+  text-decoration: underline dotted;
+  transition: color 0.15s;
+}
+
+.activity-card-link:hover {
+  color: var(--text-hover);
+}
+
+
+.activity-card-description {
+  font-size: 1.8rem;
+  color: var(--text);
+  max-height: 0;
+}
+
+.activity-card-description.open {
+  max-height: 40rem;
+}
+
+.activity-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

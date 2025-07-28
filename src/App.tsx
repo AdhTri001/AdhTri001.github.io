@@ -1,14 +1,12 @@
 import NavBar from "./components/NavBar"
 
-import Home from "./pages/Home";
-import Works from "./pages/Works";
-import Content from "./pages/Content";
-import Hobbies from "./pages/Hobbies";
+import Home from "./Home/Home";
+import Experience from "./Experience/Experience";
 
 import { Route, Routes } from "react-router-dom";
 
 
-const pages = ["Works", "Content", "Hobbies"];
+const pages = ["Experience"];
 
 /**
  * A NavBar component at the top of the page
@@ -22,9 +20,7 @@ function App() {
       <NavBar pages={pages} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/content" element={<Content />} />
-        <Route path="/hobbies" element={<Hobbies />} />
+        <Route path="/experience" element={<Experience />} />
       </Routes>
     </>
   )

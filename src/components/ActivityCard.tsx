@@ -42,12 +42,12 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
       style={!isExpandable ? { cursor: "default" } : {}}
     >
       <div className="activity-card-date">{dateString}</div>
-      <div className="activity-card-header">
-        <span className="activity-card-title">{title}</span>
-        {affiliation && (
-          <span className="activity-card-affiliation">@ {affiliation}</span>
-        )}
+
+      <div className="activity-card-title">{title} {affiliation && (
+        <span className="activity-card-affiliation">@ {affiliation}</span>
+      )}
       </div>
+
       <div className={`activity-card-description ${isExpandable ? "expandable" : "open"}${isExpandable && expanded ? " open" : ""}`}>
         {links && links.length > 0 && (
           <div className="activity-card-links">
@@ -76,7 +76,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
           </ul>
         )}
       </div>
-    </div>
+    </div >
   );
 };
 

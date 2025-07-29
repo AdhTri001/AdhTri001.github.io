@@ -9,6 +9,7 @@ nav {
   background: var(--bg-light);
   border-bottom: var(--border-muted) 2px solid;
   box-shadow: 0 4rem 8rem var(--bg-light);
+  z-index: 1000;
 }
 
 nav div.title-container {
@@ -43,7 +44,7 @@ nav div .theme-icon {
 }
 
 .theme-toggle:hover .theme-icon {
-  transform: scale(1.15) rotate(-10deg);
+  transform: scale(1.5) rotate(-10deg);
 }
 
 nav div .menu-icon {

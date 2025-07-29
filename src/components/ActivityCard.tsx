@@ -68,14 +68,14 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
         {description.map((desc, idx) => (
           <p key={idx} dangerouslySetInnerHTML={{ __html: desc }} />
         ))}
+        {skills && skills.length > 0 && (
+          <ul className="activity-card-skills">
+            {skills.map((skill, idx) => (
+              <li key={idx} className="bubble">{skill}</li>
+            ))}
+          </ul>
+        )}
       </div>
-      {skills && skills.length > 0 && (
-        <ul className="activity-card-skills">
-          {skills.map((skill, idx) => (
-            <li key={idx} className="bubble">{skill}</li>
-          ))}
-        </ul>
-      )}
     </div>
   );
 };

@@ -7,7 +7,7 @@ nav {
   left: 0;
   width: 100%;
   background: var(--bg-light);
-  border-bottom: var(--border) 2px solid;
+  border-bottom: var(--border-muted) 2px solid;
   box-shadow: 0 4rem 8rem var(--bg-light);
 }
 
@@ -114,7 +114,7 @@ nav ul li .navbar-links:hover:not(.active) {
   }
 
   nav ul.open {
-    border: var(--border-muted) 2px solid;
+    border: var(--border) 2px solid;
     margin-top: 1rem;
     max-height: 30rem;
   }

@@ -1,5 +1,7 @@
 import NavBar from "./components/NavBar"
 
+import ParticleBackground from "./components/ParticleBackground"
+
 import Home from "./Home/Home";
 import Projects from "./Projects/Projects";
 import Experience from "./Experience/Experience";
@@ -18,6 +20,7 @@ function App() {
 
   return (
     <>
+      <ParticleBackground />
       <NavBar pages={pages} />
       <Routes>
         <Route path="/" element={<Home />} />

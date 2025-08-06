@@ -7,7 +7,8 @@
 .page-layout {
   margin: 7rem auto;
   max-width: 900px;
-  background: var(--bg);
+  background: color-mix(in srgb, var(--bg), transparent 30%);
+  backdrop-filter: blur(5px);
   border-radius: 2rem;
   box-shadow: 0 2px 16px var(--bg-dark);
   padding: 2rem 2rem 4rem 2rem;
@@ -72,4 +73,12 @@
 .project-skills-accordion .project-header:hover {
   box-shadow: 0 4px 16px var(--primary);
   border-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+
+  .page-layout {
+    background: var(--bg);
+    backdrop-filter: unset;
+  }
 }

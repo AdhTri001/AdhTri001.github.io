@@ -12,14 +12,14 @@ nav {
   z-index: 1000;
 }
 
-nav div.title-container {
+.title-container {
   padding-left: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav div .theme-toggle {
+.theme-toggle {
   cursor: pointer;
   background: var(--text);
   border: var(--border) 2px solid;
@@ -33,7 +33,7 @@ nav div .theme-toggle {
   transition: box-shadow 0.2s, border 0.2s;
 }
 
-nav div .theme-icon {
+.theme-icon {
   margin: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -47,7 +47,7 @@ nav div .theme-icon {
   transform: scale(1.5) rotate(-10deg);
 }
 
-nav div .menu-icon {
+.menu-icon {
   display: none;
   font-size: 3rem;
   cursor: pointer;
@@ -59,14 +59,14 @@ nav div .menu-icon {
   width: 4.5rem;
 }
 
-nav ul.expandable {
+ul.expandable {
   display: flex;
   flex-direction: row;
   list-style: none;
   opacity: 1;
 }
 
-nav ul li .navbar-links {
+ul li .navbar-links {
   font-size: 3rem;
   text-decoration: none;
   padding: 1rem;
@@ -75,14 +75,14 @@ nav ul li .navbar-links {
   border-radius: 1rem;
 }
 
-nav ul li .navbar-links.active {
+ul li .navbar-links.active {
   border-color: var(--border-muted);
   border-width: 2px;
   background: var(--bg);
   color: var(--primary);
 }
 
-nav ul li .navbar-links:hover:not(.active) {
+ul li .navbar-links:hover:not(.active) {
   border-width: 1px;
   background: var(--gradient-highlight);
 }

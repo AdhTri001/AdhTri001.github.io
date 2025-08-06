@@ -8,6 +8,11 @@ interface Particle {
   vy: number;
 }
 
+const speed = 0.3; // Adjust speed of particles
+const count = 150; // Maximum number of particles
+const dist_threshold = 150; // Distance threshold for connections
+const radius = 3; // Radius of each particle
+
 export default function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
@@ -27,14 +32,14 @@ export default function ParticleBackground() {
 
     const createParticles = () => {
       const particles: Particle[] = [];
-      const particleCount = Math.min(150, Math.floor(window.innerWidth / 10));
+      const particleCount = Math.min(count, Math.floor(window.innerWidth / 10));
 
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          vx: (Math.random() - 0.5) * 0.5,
-          vy: (Math.random() - 0.5) * 0.5
+          vx: (Math.random() - 0.5) * speed,
+          vy: (Math.random() - 0.5) * speed
         });
       }
 
@@ -58,8 +63,8 @@ export default function ParticleBackground() {
 
         // Draw particle
         ctx.beginPath();
-        ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
-        ctx.fill();
+        ctx.arc(particle.x, particle.y, radius, 0, Math.PI * 2);
+        ctx.stroke();
 
         // Draw connections
         particlesRef.current.slice(i + 1).forEach(otherParticle => {
@@ -67,11 +72,11 @@ export default function ParticleBackground() {
           const dy = particle.y - otherParticle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 100) {
+          if (distance < dist_threshold) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.save();
-            ctx.globalAlpha = (1 - distance / 100) * 0.8;
+            ctx.globalAlpha = (1 - distance / dist_threshold) * 0.8;
             ctx.lineTo(otherParticle.x, otherParticle.y);
             ctx.stroke();
             ctx.restore();

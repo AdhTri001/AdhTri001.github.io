@@ -21,26 +21,3 @@
   max-width: 500px;
   margin: 1rem 0rem;
 }
-
-.profile-socials {
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.profile-social-icon {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.2s, box-shadow 0.2s;
-  border-radius: 50%;
-  fill: var(--text-muted);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-  display: inline-block;
-}
-
-.profile-social-icon:hover {
-  transform: scale(1.12);
-  box-shadow: 0 2px 8px var(--primary);
-  fill: var(--text);
-}

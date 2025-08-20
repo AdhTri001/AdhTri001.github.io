@@ -13,7 +13,8 @@ interface SocialsProps {
     linkedin?: string;
     mail?: string;
     x?: string;
-  };
+  },
+  resumeUrl: string;
 }
 
 const SOCIALS_ICONS = {
@@ -23,7 +24,7 @@ const SOCIALS_ICONS = {
   x: xIcon,
 };
 
-function Socials({ socials }: SocialsProps) {
+function Socials({ socials, resumeUrl }: SocialsProps) {
   return (
     <div className="socials">
       {socials &&
@@ -45,7 +46,7 @@ function Socials({ socials }: SocialsProps) {
       }
 
       <a
-        href="/resume.pdf"
+        href={resumeUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="resume-link"

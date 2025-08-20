@@ -14,7 +14,7 @@ function Home() {
           <CategoryList key={idx} category={cat.category} items={cat.items} />
         ))}
       </div>
-      <Socials socials={homeData.socials} />
+      <Socials socials={homeData.socials} resumeUrl={homeData.resume} />
     </PageLayout>
   );
 }
